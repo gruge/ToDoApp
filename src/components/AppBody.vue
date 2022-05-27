@@ -1,8 +1,16 @@
 <template>
 <body>
-<div class="lg:container lg:mx-auto">
-    <div class="m-auto max-w-50em h-7em mt-15em bg-gray-500/50 opacity-25 rounded-4xl" id="body">
-    </div>
+<div class="container mx-auto">
+    <p style="color: white; font-size: 5em; text-align: center;" class="select-none">
+      My Day
+    </p>
+    <p style="color: white; font-size: 1.5em; text-align: center;" class="select-none">
+        <span>{{moment(date).format('MMMM Do YYYY')}}</span>
+    </p>
 </div>
+    <div class="mx-auto w-60em h-7em mt-3em border-3 rounded-full bg-transparent flex" id="body">
+        <img style="user-drag: none;" src="../assets/images/plus.png" class="m-1.3em h-4em w-4em select-none" />
+     <input style="color: white; font-size: 4.5em; outline: none;" class="mt-0.1em mx-auto w-11.5em bg-transparent drop-shadow-2xl" type="text" id="fname" name="fname">
+    </div>
 </body>
 </template>

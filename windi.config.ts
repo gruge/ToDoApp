@@ -14,13 +14,18 @@ export default {
       none: '0',
       sm: '2px',
     },
-    theme: {
-      divideColor: theme => ({
-        ...theme('borderColors'),
-        primary: '#3490dc',
-        secondary: '#ffed4a',
-        danger: '#e3342f',
-      }),
+    divideColor: theme => ({
+      ...theme('borderColors'),
+      primary: '#3490dc',
+      secondary: '#ffed4a',
+      danger: '#e3342f',
+    }),
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      '50%': '50%',
+      '16': '4rem',
     },
   },
 }

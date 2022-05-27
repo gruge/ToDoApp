@@ -1,13 +1,16 @@
 <template>
-<div style="bgcolor: #800000"></div>
-<img style=" position: absolute; z-index:-2; max-width: 100%; height: auto;" v-bind:src="image" />
+<div>
+<img style="position: fixed; z-index:-2; auto; width: 100%; height: 100%; user-drag: none;" :src="image" />
+</div>
 </template>
 
 <script>
+  import image from "../assets/images/bg.png"
+
 export default {
   data: function () {
     return {
-      image: "https://cdn.wallpapersafari.com/73/74/v20swk.jpg"
+      image: image
     }
   }
 }
