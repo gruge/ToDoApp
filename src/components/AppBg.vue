@@ -8,7 +8,7 @@
   import image from "../assets/images/bg.png"
 
 export default {
-  data: function () {
+  data () {
     return {
       image: image
     }
